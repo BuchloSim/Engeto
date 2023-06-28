@@ -1,0 +1,107 @@
+@media (max-width: 910px) {
+  .fb,
+  .email {
+    margin: 10px;
+  }
+  .telefon {
+    display: block ruby;
+  }
+
+  .form-pic {
+    flex-direction: column;
+  }
+  .about-us-pic img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .button {
+    margin-right: 30px;
+  }
+  .footer-wrapp {
+    gap: 10px;
+  }
+  .socials {
+    flex-direction: column;
+  }
+  .fb,
+  .email {
+    margin: 10px;
+  }
+  .telefon {
+    flex-direction: column;
+  }
+  .footer-wrapp {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .address {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .mapa {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+  nav {
+    position: absolute;
+    top: 70px;
+    background-color: black;
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+  }
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 23px;
+  }
+  nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .button {
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  .product-container {
+    flex-direction: column;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-1 {
+    max-width: 100%;
+  }
+
+  .product-1 img {
+    max-width: 100%;
+  }
+
+  .mapa iframe {
+    max-width: 100%;
+  }
+}

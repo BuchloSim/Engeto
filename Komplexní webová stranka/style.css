@@ -1,0 +1,309 @@
+:root {
+  --main: gold;
+  --main2: black;
+  --main3: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kalam", cursive;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--main2);
+  height: 100px;
+}
+
+.logo img {
+  width: 100px;
+  margin-left: 20px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+/*button*/
+.button {
+  margin-right: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--main3);
+  cursor: pointer;
+}
+
+/* Navigace*/
+nav {
+  margin-right: 30px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--main3);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid var(--main);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.menu-icon {
+  margin-right: 30px;
+  display: none;
+}
+
+/* about-us*/
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+  margin: 70px 20px;
+}
+
+.about-us h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.about-us-text {
+  text-align: center;
+  margin: 50px auto;
+  line-height: 1.5;
+  max-width: 50%;
+}
+
+.about-us-text span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.about-us-text p {
+  font-size: 25px;
+}
+
+.about-us-pic {
+  text-align: center;
+}
+
+.about-us-pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+/* Product*/
+.product-container {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.product-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.product-1 img {
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+  transition: all 0.5s linear;
+}
+
+.product-text p {
+  text-align: center;
+  max-width: 100%;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 25px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.value {
+  font-size: 35px;
+  margin-left: 150px;
+}
+
+/*Form*/
+
+.form-pic {
+  display: flex;
+  align-items: center;
+  background-color: var(--main2);
+}
+
+.form-pic img {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 50%;
+  object-fit: cover;
+}
+
+form {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+form p {
+  color: var(--main3);
+  font-weight: bold;
+}
+
+input {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  width: 30%;
+  border-radius: 5%;
+}
+
+.submit {
+  background-color: var(--main);
+}
+
+/*Roll-button */
+.scroll-button {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+}
+
+.scroll-button a {
+  text-decoration: none;
+  color: var(--main);
+  display: none;
+  font-size: 30px;
+  z-index: 1;
+}
+
+/*Footer*/
+footer {
+  margin-bottom: 50px;
+}
+
+.footer-wrapp {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.address span {
+  line-height: 2.5;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a i {
+  padding: 10px 10px 20px 0;
+}
+
+.fb a,
+.email a {
+  text-decoration: none;
+  color: var(--main2);
+}
+
+.telefon a {
+  color: var(--main2);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+/*dark mode*/
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4 {
+  color: white;
+}
+
+.dark-mode header {
+  background-color: white;
+}
+
+.dark-mode header a {
+  color: black;
+}
+
+.dark-mode .scroll-button {
+  color: gold;
+}
+
+.dark-mode .doot {
+  color: black;
+}
+
+.dark-mode .fb a,
+.dark-mode .email a,
+.dark-mode .telefon a {
+  color: white;
+}
