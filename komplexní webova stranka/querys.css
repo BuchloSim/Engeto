@@ -91,3 +91,17 @@
     display: block !important;
   }
 }
+
+@media (max-width: 500px) {
+  .product-1 {
+    max-width: 100%;
+  }
+
+  .product-1 img {
+    max-width: 100%;
+  }
+
+  .mapa iframe {
+    max-width: 100%;
+  }
+}
