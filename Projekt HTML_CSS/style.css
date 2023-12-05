@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --text: #ffffff;
+  --navigation: #33292a;
+  --background-1: #33292a;
+  --background-2: #644b4f;
+  --background-3: #333333;
+  --background-4: #f2f2f2;
+  --link: #efa69d;
+  --hover: #e9877b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vw;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Navigace */
+
+.menu {
+  background-color: var(--navigation);
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-wrapp {
+  width: 90%;
+  height: 100px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li {
+  list-style-type: none;
+  padding: 27px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text);
+  flex: 1 1 0;
+  font-size: 2rem;
+}
+
+.burger-btn {
+  display: none;
+  margin-left: auto;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Hero section */
+.hero {
+  background-image: url("images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  width: 100%;
+  height: 804px;
+  position: relative;
+}
+
+.hero-hero {
+  display: flex;
+  justify-content: right;
+}
+
+.hero-wrapp {
+  position: absolute;
+  top: 45%;
+}
+
+h1 {
+  color: var(--text);
+  font-size: 6rem;
+  text-align: right;
+  line-height: 112.5px;
+}
+
+/* About Us */
+.about {
+  background-color: var(--background-4);
+}
+.about-wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 50px;
+  padding: 90px 0 110px 0;
+}
+
+.about-text {
+  flex: 1 1 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.about-pic {
+  flex: 1 1 0;
+}
+
+.about-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* What */
+.what {
+  background-color: var(--background-1);
+  color: var(--text);
+  padding: 100px 0;
+}
+
+.what-text {
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.what-text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.what-icons {
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.icon {
+  flex: 1 1 0;
+}
+
+.icon img {
+  width: 25%;
+}
+
+.icon h3 {
+  padding-top: 12px;
+  font-size: 1.5rem;
+}
+/* Our trips */
+
+.trips {
+  background-color: #ffffff;
+}
+
+.trips-wrapp {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.first,
+.second,
+.third {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.el-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-4);
+  font-size: 1.5rem;
+}
+
+.item {
+  flex: 1 1 0;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Where */
+.where {
+  background-color: var(--background-2);
+  color: var(--text);
+}
+
+.where-wrapp {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  gap: 10px;
+}
+
+.where-title {
+  flex: 0 0 40%;
+  font-size: 40px;
+}
+
+.where-text {
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+.where-text article {
+  padding-bottom: 20px;
+  font-size: 1rem;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 12px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  border: 0;
+  font-size: 0.875rem;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+/* Reviews */
+.reviews {
+  background-color: var(--background-4);
+  padding: 100px 0;
+}
+
+.reviews-wrapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews-wrapp h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.reviews-title {
+  flex-grow: 1;
+}
+
+.reviews-title article {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.reviews-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.reviews-1 {
+  text-align: center;
+}
+
+.reviews-pic {
+  flex-grow: 1;
+}
+
+.reviews-pic img {
+  width: 25%;
+  clip-path: circle();
+}
+
+.reviews-text {
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.reviews-text p {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* Photogallery */
+.photogallery {
+  width: 100%;
+}
+
+.photogallery-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.photogallery-1 img {
+  max-width: 50%;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--background-3);
+  text-align: center;
+  padding: 40px 0;
+  color: var(--text);
+}
+
+.footer a:link,
+.footer a:visited {
+  color: var(--link);
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 0.75;
+}
+
+.footer a:hover,
+.footer a:active {
+  color: var(--hover);
+  border-bottom: 2px solid var(--hover);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-wrapp {
+    width: 85%;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+  }
+  .container {
+    width: 85%;
+  }
+
+  nav {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .el-5 {
+    padding: 20px;
+  }
+
+  .reviews-1 img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-wrapp {
+    flex-direction: column;
+  }
+
+  .what-icons {
+    flex-direction: column;
+  }
+
+  .icon {
+    padding: 30px;
+  }
+
+  .first,
+  .second,
+  .third {
+    flex-direction: column;
+  }
+
+  .where-wrapp {
+    flex-direction: column;
+  }
+
+  .reviews-reviews {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .photogallery-1 img {
+    max-width: 100%;
+  }
+}
